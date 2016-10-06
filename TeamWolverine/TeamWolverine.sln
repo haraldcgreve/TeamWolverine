@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamWolverine", "TeamWolverine\TeamWolverine.csproj", "{C78913A9-CFF8-4C8B-8018-973B2857B6B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{F36728F1-FB80-4D6E-8955-98800237F549}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{FA4FA430-5A08-4060-9904-C8A90E433C78}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{25D9E825-27F0-40E8-AA40-54F834A6609A}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\TeamWolverine.json = PublishScripts\Templates\TeamWolverine.json
+		PublishScripts\Templates\TeamWolverine.param.dev.json = PublishScripts\Templates\TeamWolverine.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C78913A9-CFF8-4C8B-8018-973B2857B6B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C78913A9-CFF8-4C8B-8018-973B2857B6B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C78913A9-CFF8-4C8B-8018-973B2857B6B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C78913A9-CFF8-4C8B-8018-973B2857B6B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FA4FA430-5A08-4060-9904-C8A90E433C78} = {F36728F1-FB80-4D6E-8955-98800237F549}
+		{25D9E825-27F0-40E8-AA40-54F834A6609A} = {F36728F1-FB80-4D6E-8955-98800237F549}
+	EndGlobalSection
+EndGlobal
