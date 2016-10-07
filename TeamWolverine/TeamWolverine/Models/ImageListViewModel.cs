@@ -10,6 +10,6 @@ public class ImageListViewModel
     {
         public IEnumerable<ImageModel>  ImageList { get; set; }
 
-        public string Message { get; set; }
+        public int Total { get; set; }
     }
 }
