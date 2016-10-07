@@ -2,30 +2,33 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<!-- <header>
+   <button>Menu</button>
+   <nav>
+     <ul>
+       <li>about the challange</li>
+       <li><a href="#!" target="_blank">M&S</a></li>
+       <li><a href="#!" target="_blank">Boots</a></li>
+       <li>FAQs</li>
+     </ul>
+   </nav>
+ </header> -->
+<div class="container al-center selfie-campaign">
+    <h1 class="campaign-hash">#macmillanselfie</h1>
+    <p class="m-auto">So far we've raised</p>
+    <h2 class="amount-raised"></h2>
+    <p class="m-auto">Don't accept the challange? Donate here!</p>
+    <a href="https://www.macmillan.org.uk/donate" target="_blank" class="m-auto btn btn-purple">Donate</a>
 </div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+<!-- <div class="container">
+  <ul>
+    <li>300 nurses funded</li>
+    <li>258452 selfies</li>
+  </ul>
+</div> -->
+<div class="container">
+    <div class="selfie-detail"></div>
+    <ul class="photos" id="imagesContainer"></ul>
 </div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="~/Scripts/index.js"></script>
