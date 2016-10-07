@@ -1,0 +1,36 @@
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  -ms-border-radius: $radius
+  -o-border-radius: $radius
+  border-radius: $radius
+
+=transition($property)
+  -webkit-transition: $property
+  -o-transition: $property
+  transition: $property
+
+=font-rendering
+  text-rendering: optimizeLegibility
+  moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+  font-smoothing: antialiased
+  -ms-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+  text-size-adjust: 100%
+
+=gradient($color1, $color2)
+  background: $color1
+  background: -webkit-linear-gradient(to left, $color1 , $color2)
+  background: linear-gradient(to left, $color1 , $color2)
+
+@function rem($px)
+  $rem: $px / 16px
+  @return $rem * 1rem
+
+=font-size($px)
+  font-size: $px
+  font-size: rem($px)
+
+=font($font-family)
+  font-family: $font-family

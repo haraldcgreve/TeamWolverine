@@ -1,0 +1,22 @@
+{
+  "name": "Team_Wolverine_FE",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "sass": "node-sass --include-path sass assets/_sass/main.sass dist/styles.min.css --output-style compressed",
+    "watch-sass": "nodemon -e sass -x \"npm run sass\"",
+    "start": "webpack-dev-server"
+  },
+  "author": "Reinaldo Ferreira",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.13.2",
+    "node-sass": "^3.9.3",
+    "nodemon": "^1.10.2",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.15.1"
+  }
+}

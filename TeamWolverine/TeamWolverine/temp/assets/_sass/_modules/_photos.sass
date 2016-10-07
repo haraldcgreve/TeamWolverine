@@ -1,0 +1,35 @@
+.photos
+  padding: 10px 1px
+  position: relative
+
+  &__item
+    box-sizing: border-box
+    cursor: pointer
+    display: inline-block
+    max-width: 33.3333%
+    padding: 0 2px
+
+.photo__close
+  +font(macmillan)
+  +font-size(24px)
+  background: $purple
+  display: none
+  color: $white
+  border: none
+  padding: 2px 10px
+  position: absolute
+  right: 10px
+  top: 20px
+  z-index: 2
+
+.photo-tumb
+  display: block
+  max-height: 100%
+  max-width: 100%
+
+.photo-detail
+  display: none
+  left: 0
+  position: absolute
+  top: 10px
+  width: 100%
