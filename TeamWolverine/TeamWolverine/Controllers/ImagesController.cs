@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Net;
 using System.IO;
+using System.Text;
 using Newtonsoft.Json;
 using System.Web.Script.Serialization;
 using TeamWolverine.Models;
@@ -82,11 +83,44 @@ namespace TeamWolverine.Controllers
 
         private IEnumerable<ImageModel> GetImages(double lati, double lngi)
         {
-            string uriInstagram =
+            //var code =
+
+
+            //string uriInstagram =
+            //    "https://www.instagram.com/oauth/authorize/?client_id=97d34045767c42abbeadc0343aa651b1&redirect_uri=http://teamwolverine.azurewebsites.net&response_type=code&scope=public_content";
+            //        //string.Format("https://api.instagram.com/v1/tags/teammacmillan/media/recent?access_token={0}",
+            //         //   AccessToken);
+
+            //var resultCode = new WebClient().DownloadString(uriInstagram);
+
+            //var request = (HttpWebRequest)WebRequest.Create("https://api.instagram.com/oauth/access_token");
+
+            //var postData = "client_id=97d34045767c42abbeadc0343aa651b1";
+            //postData += "&client_secret=837b554f87384b9ca97100c098a21409";
+            //postData += "&grant_type=authorization_code";
+            //postData += "&redirect_uri=http://teamwolverine.azurewebsites.net";
+            //postData += "&code=9c4d542cf9a348e891aed2f58b4daded";
+            //var datas = Encoding.ASCII.GetBytes(postData);
+
+            //request.Method = "POST";
+            //request.ContentType = "application/x-www-form-urlencoded";
+            //request.ContentLength = datas.Length;
+
+            //using (var stream = request.GetRequestStream())
+            //{
+            //    stream.Write(datas, 0, datas.Length);
+            //}
+
+            //var response = (HttpWebResponse)request.GetResponse();
+
+            //var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
+
+
+            string urisInstagram =
                     string.Format("https://api.instagram.com/v1/tags/teammacmillan/media/recent?access_token={0}",
                         AccessToken);
-
-            var result = new WebClient().DownloadString(uriInstagram);
+        
+            var result = new WebClient().DownloadString(urisInstagram);
 
             JavaScriptSerializer jss = new JavaScriptSerializer();
 
