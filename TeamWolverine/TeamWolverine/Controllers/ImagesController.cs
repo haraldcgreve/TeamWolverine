@@ -117,7 +117,7 @@ namespace TeamWolverine.Controllers
 
 
             string urisInstagram =
-                    string.Format("https://api.instagram.com/v1/tags/teammacmillan/media/recent?access_token={0}",
+                    string.Format("https://api.instagram.com/v1/tags/macmillanselfie/media/recent?access_token={0}",
                         AccessToken);
         
             var result = new WebClient().DownloadString(urisInstagram);
@@ -132,6 +132,10 @@ namespace TeamWolverine.Controllers
 
             foreach (var img in data)
             {
+                var liked = (bool) img["user_has_liked"];
+
+
+
                 if (img["location"] != null)
                 {
 
